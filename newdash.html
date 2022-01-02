@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" type="text/css" href="newdash.css">
+</head>
+<body>
+	<div class="container">
+		<div class="navigation">
+			<ul>
+				<li>
+					<a href="#">
+					<span class= "icon"></span>
+					<span class="title"><h2>COVID Tracker</h2></span>
+					</a>
+				</li>
+				<li>
+					<a href="emergency.html">
+					<span class= "icon"></span>
+					<span class="title">Emergency</span>
+					</a>
+				</li>
+				<li>
+					<a href="index.html">
+					<span class= "icon"></span>
+					<span class="title">Log Out</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="topbar">
+				<div class="toggle" onclick="toggleMenu()"></div>
+				<div class="search">
+					<label>
+					<input type="text" placeholder="Search">
+					<i class="fa fa-search" aria-hidden="true"></i>
+					</label>
+				
+			</div>
+					<div class="user">
+					<img src="user.png">
+				</div>
+	</div>
+			<div class="cardBox">
+			<div class= "card">
+			<div>
+			<div class="numbers">0</div>
+			<div class="cardName">COVID Infections</div>
+			</div>
+			<div class="iconBox"></div>
+			<i class="fa fa-eye" aria-hidden="true"></i>
+			
+			</div>
+			
+		
+			
+			
+			<div class= "card">
+			<div>
+			<div class="numbers">0</div>
+			<div class="cardName">Total Area Infections</div>
+			</div>
+			<div class="iconBox"></div>
+			<i class="fa fa-eye" aria-hidden="true"></i>
+			
+			</div>
+			
+			
+			<div class= "card">
+			<div>
+			<div class="numbers">0</div>
+			<div class="cardName">Users Under Quarantine</div>
+			</div>
+			<div class="iconBox"></div>
+			<i class="fa fa-eye" aria-hidden="true"></i>
+			
+			</div>
+	
+			
+			<div class= "card">
+			<div>
+			<div class="numbers">1</div>
+			<div class="cardName">Users Recovered</div>
+			</div>
+			<div class="iconBox"></div>
+			<i class="fa fa-eye" aria-hidden="true"></i>
+			
+			</div>
+			</div>
+			
+			
+			<div class="details">
+				<div class="recentOrders">
+				<div class=" ">
+					 <h2>Recent Actions</h2>
+				</div>
+				<table>
+				<thead>
+					<tr> 
+					<td>Name</td>
+					<td>COVID</td>
+					<td>Location</td>
+					<td>Status</td>
+					
+					</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<td>Jhem</td>
+				<td>Positive</td>
+				<td>Admitted</td>
+				<td><span class="status delivered">Recovered</span></td>
+				</tr>
+				
+				<tr>
+				</tbody>
+				</table>
+				</div>
+				<div class="recentCustomers">
+				<div class="cardHeader">
+					 <h2>Recent Users</h2>
+				</div>
+				<table>
+					<tbody>
+						<tr>
+							<td width="60px"><div class="imgBx"><img src="user.png"></div></td>
+							<td><h4> Jhem <br> <span> Brgy 26 Laoag City </span> </h4> </td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+						
+	</div>
+	</div>
+	</div>
+	<script>
+			function toggleMenu(){
+				let toggle = document.querySelector('.toggle');
+				let navigation = document.querySelector('.navigation');
+				let main = document.querySelector('.main');
+				toggle.classList.toggle('active');
+				navigation.classList.toggle('active');
+				main.classList.toggle('active');
+				}
+	</script>
+</body>
+</html>
